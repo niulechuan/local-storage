@@ -16,6 +16,7 @@ Support disk type: `HDD`, `SSD`, `NVMe`, `RAMDisk`.
 
 ## Features and Roadmap
 
+
 |        Feature       |   Status      |  Release  |   TP Date  |    GA Date   |                Description               |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 |    non-HA LVM volume      |   Completed   |   v1.0    |  2020.Q3   |   2020.Q4    |  volume by LVM |
