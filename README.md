@@ -10,7 +10,6 @@ Support local volume kinds: `LVM`.
 
 Support disk types: `HDD`, `SSD`, `NVMe`.
 
-## Architecture of HwameiStor
 
 ![image](https://github.com/hwameistor/local-storage/blob/main/doc/design/HwameiStor-arch.png)
 
