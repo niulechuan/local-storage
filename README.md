@@ -3,7 +3,6 @@
 English | [Simplified_Chinese](https://github.com/hwameistor/local-storage/blob/main/README_zh.md)
 
 ## Introduction
-
 Local Storage is one of modules of HwameiStor which is a cloud native local storage system. it aims to provision high performance persistent LVM volume with local access to applications.
 
 Support local volume kinds: `LVM`.
