@@ -37,4 +37,5 @@ jobs:
         run: |
           echo "Uname: ${GOVC_USERNAME}"
           echo "PWD: ${GOVC_PASSWORD}"
+          echo "Raw: ${{ secrets.GOVC_USERNAME }}"
           make e2e-test
