@@ -20,23 +20,13 @@ jobs:
       - name: unit-test
         run: make unit-test
   pull_request-e2e-test:
-    #    runs-on: ["self-hosted"]
-    runs-on: ubuntu-latest
+    runs-on: ["self-hosted"]
     environment: test
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Set env
-        run: |
-          echo "GOVC_USERNAME=`echo ${{ secrets.GOVC_USERNAME }}`" >> $GITHUB_ENV
-          echo "GOVC_PASSWORD=`echo ${{ secrets.GOVC_PASSWORD }}`" >> $GITHUB_ENV
-          echo "GOVC_URL=`echo ${{ secrets.GOVC_URL }}`" >> $GITHUB_ENV
-          echo "GOVC_DATACENTER=`echo ${{ secrets.GOVC_DATACENTER }}`" >> $GITHUB_ENV
       - name: e2e-test
         run: |
-          echo "Uname: ${GOVC_USERNAME}"
-          echo "PWD: ${GOVC_PASSWORD}"
-          echo "Raw: ${{ secrets.GITHUB_TOKEN }}"
           make e2e-test
