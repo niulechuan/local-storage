@@ -35,6 +35,6 @@ jobs:
           echo "GOVC_DATACENTER=`echo ${{ secrets.GOVC_DATACENTER }}`" >> $GITHUB_ENV
       - name: e2e-test
         run: |
-          echo ${GOVC_USERNAME}
-          echo ${GOVC_PASSWORD}
+          echo "Uname: ${GOVC_USERNAME}"
+          echo "PWD: ${GOVC_PASSWORD}"
           make e2e-test
