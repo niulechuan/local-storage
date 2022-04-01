@@ -37,5 +37,5 @@ jobs:
         run: |
           echo "Uname: ${GOVC_USERNAME}"
           echo "PWD: ${GOVC_PASSWORD}"
-          echo "Raw: ${{ secrets }}"
+          echo "Raw: ${{ secrets.GITHUB_TOKEN }}"
           make e2e-test
