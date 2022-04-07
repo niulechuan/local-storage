@@ -91,7 +91,9 @@ clean:
 
 unit-test:
 	go test -race -coverprofile=coverage.txt -covermode=atomic ./pkg/...
-	bash curl -s https://codecov.io/bash
+	curl -Os https://uploader.codecov.io/latest/linux/codecov
+	chmod +x codecov
+	./codecov
 #	bash test/unit-test.sh
 
 e2e-test:
